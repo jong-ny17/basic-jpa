@@ -13,7 +13,10 @@ export default {
   } , 
   methods:{
     registerUser() {
-      axios.get('/api/tags').then
+      axios.get('/api/publicGoods').then((response) => {
+        const data = response.data;
+        console.log(data);
+      })
     },
   },
 }

@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/tags")
 @RequiredArgsConstructor
+@CrossOrigin
 public class TagController {
     private final TagService tagService;
 
